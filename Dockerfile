@@ -1,4 +1,5 @@
 FROM debian:latest
+LABEL version="1.0.1" arch="x86-64"
 RUN apt-get update && apt-get install -y htop
 # Copy file entrypoint.sh to "/" (image racine)
 COPY entrypoint.sh /
